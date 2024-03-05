@@ -7,10 +7,10 @@ export function renderImages(images) {
                 src="${webformatURL}"
                 data-source="${largeImageURL}"
                 alt="${tags}"/></a>
-                <p>likes="${likes}"</p>
-                <p>views="${views}"</p>
-                <p>comments="${comments}"</p>
-                <p>download="${downloads}"</p>
+                <p class="image-info-item"><span class="image-items-text">Likes: </span>${likes}</p>
+                <p class="image-info-item"><span class="image-items-text">Views: </span>${views}</p>
+                <p class="image-info-item"><span class="image-items-text">Comments: </span>${comments}</p>
+                <p class="image-info-item"><span class="image-items-text">Downloads: </span>${downloads}</p>
             </li>`;
     }).join('')
       container.insertAdjacentHTML("beforeend", markup);
